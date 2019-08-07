@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>QuizApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="dark">
+
+    <ion-card-header>
+    
+    Question 10
+    
+    </ion-card-header>
+    
+    <ion-card-content color="dark">
+      In darts, what's the most points you can score with a single throw?
+      How did Spider-Man get his powers?
+
+    </ion-card-content>
+    </ion-card>
+    <ion-list radio-group no-lines padding>
+    <ion-item >
+    <ion-radio [value]="A" (ionSelect)="select('option','A')"></ion-radio>
+    <ion-label>A – 20</ion-label>
+    </ion-item>
+    <ion-item>
+    <ion-radio [value]="B" (ionSelect)="select('option','B')"></ion-radio>
+    <ion-label>B – 50</ion-label>
+    </ion-item>
+    <ion-item >
+    <ion-radio [value]="C" (ionSelect)="select('option','C')"></ion-radio>
+    <ion-label>C – 60</ion-label>
+    </ion-item>
+    <ion-item>
+    <ion-radio [value]="D" (ionSelect)="select('option','D')"></ion-radio>
+    <ion-label>D – 100 </ion-label>
+    </ion-item>
+    <ion-item >
+    <ion-radio [value]="E" (ionSelect)="select('option','E')"></ion-radio>
+    <ion-label>E – 80</ion-label>
+    </ion-item>
+    </ion-list>
+    <div class="next">
+      <ion-button color="dark" (click)="goNext()">Submit</ion-button>
+    </div>
+</ion-content>

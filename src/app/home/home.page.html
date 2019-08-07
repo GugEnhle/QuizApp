@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title color="dark" class>QuizApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="dark">
+   <ion-card-header>Question 1</ion-card-header>
+    <ion-card-content color="dark">
+    
+    Which country is the most populous country in Africa?
+    
+    </ion-card-content>
+    </ion-card>
+    <ion-item>
+    <ion-radio [value]="A" (ionSelect)="select('option','A')"></ion-radio>
+    <ion-label>A – South Africa</ion-label>
+    </ion-item>
+    <ion-item>
+    <ion-radio [value]="B" (ionSelect)="select('option','B')"></ion-radio>
+    <ion-label>B – Nigeria</ion-label>
+    </ion-item>
+    <ion-item >
+    <ion-radio [value]="C" (ionSelect)="select('option','C')"></ion-radio>
+    <ion-label>C – Ethiopia</ion-label>
+    </ion-item>
+    <ion-item>
+    <ion-radio [value]="D" (ionSelect)="select('option','D')"> </ion-radio>
+    <ion-label>D – Cameroun</ion-label>
+    </ion-item>
+    <ion-item >
+    <ion-radio [value]="E" (ionSelect)="select('option','E')"></ion-radio>
+    <ion-label>E – Ghana</ion-label>
+    </ion-item>
+  <br>
+  <br>
+  <div class="next">
+  <ion-button color="dark" (click)="goNext()">Submit</ion-button>
+</div>
+    </ion-content>

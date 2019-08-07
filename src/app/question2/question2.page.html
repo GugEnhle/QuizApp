@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="dark">
+
+    <ion-card-header>Question 2</ion-card-header>
+    
+    <ion-card-content color="dark">
+    
+      Which is the longest and largest river in West Africa?
+    
+    </ion-card-content>
+    
+    </ion-card>
+
+    <ion-item>
+      <ion-radio [value]="A" (ionSelect)="select('option','A')"></ion-radio>
+      <ion-label>A – Saint Paul River</ion-label>
+      </ion-item>
+      <ion-item>
+      <ion-radio [value]="B" (ionSelect)="select('option','B')"></ion-radio>
+      <ion-label>B – Sankarani River</ion-label>
+      </ion-item>
+      <ion-item >
+      <ion-radio [value]="C" (ionSelect)="select('option','C')"></ion-radio>
+      <ion-label>C – River Niger</ion-label>
+      </ion-item>
+      <ion-item>
+      <ion-radio [value]="D" (ionSelect)="select('option','D')"> </ion-radio>
+      <ion-label>D – River Volta</ion-label>
+      </ion-item>
+      <ion-item >
+      <ion-radio [value]="E" (ionSelect)="select('option','E')"></ion-radio>
+      <ion-label>E – Cavalia River</ion-label>
+      </ion-item>
+      
+      <br>
+      <br>
+      <div class="next">
+      <ion-button color="dark" (click)="goNext()">Submit</ion-button>
+    </div>
+</ion-content>

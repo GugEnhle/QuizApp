@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>QuizApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="dark" >
+
+    <ion-card-header>
+    
+    Question 15
+    
+    </ion-card-header>
+    
+    <ion-card-content color="dark">
+      What is the name of this symbol: ¶
+    </ion-card-content>
+    </ion-card>
+    <ion-list radio-group no-lines padding>
+    <ion-item >
+    <ion-radio [value]="A" (ionSelect)="select('option','A')"></ion-radio>
+    <ion-label>A – Fermata</ion-label>
+    </ion-item>
+    <ion-item>
+    <ion-radio [value]="B" (ionSelect)="select('option','B')"></ion-radio>
+    <ion-label>B – Pilcrow</ion-label>
+    </ion-item>
+    <ion-item >
+    <ion-radio [value]="C" (ionSelect)="select('option','C')"></ion-radio>
+    <ion-label>C – Interrobang</ion-label>
+    </ion-item>
+    <ion-item>
+    <ion-radio [value]="D" (ionSelect)="select('option','D')"></ion-radio>
+    <ion-label>D – Biltong</ion-label>
+    </ion-item>
+    </ion-list>
+    <div class="next">
+      <ion-button color="dark" (click)="goNext()">Submit</ion-button>
+    </div>
+</ion-content>

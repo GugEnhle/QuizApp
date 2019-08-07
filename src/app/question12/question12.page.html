@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title >QuizApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="dark">
+
+    <ion-card-header>
+    
+    Question 11
+    
+    </ion-card-header>
+    
+    <ion-card-content color="dark" >
+      Who are known as Brahmins?
+
+    </ion-card-content>
+    </ion-card>
+    <ion-list radio-group no-lines padding>
+    <ion-item >
+    <ion-radio [value]="A" (ionSelect)="select('option','A')"></ion-radio>
+    <ion-label>A – Surfers in California</ion-label>
+    </ion-item>
+    <ion-item>
+    <ion-radio [value]="B" (ionSelect)="select('option','B')"></ion-radio>
+    <ion-label>B – Nepali soldiers in the British army</ion-label>
+    </ion-item>
+    <ion-item >
+    <ion-radio [value]="C" (ionSelect)="select('option','C')"></ion-radio>
+    <ion-label>C – Members of India's highest caste </ion-label>
+    </ion-item>
+    <ion-item>
+    <ion-radio [value]="D" (ionSelect)="select('option','D')"></ion-radio>
+    <ion-label>D – It's a totally made up word</ion-label>
+    </ion-item>
+    </ion-list>
+    <div class="next">
+      <ion-button color="dark" (click)="goNext()">Submit</ion-button>
+    </div>
+</ion-content>
